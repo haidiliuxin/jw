@@ -9,7 +9,6 @@
 - `chat_common.hpp`：自编写的发送完整数据和 LF 帧解析代码
 - `server.exe` / `client.exe`：已构建的 Windows x64 可执行程序
 - `实验报告.md`：实验说明与测试记录
-- `tests/integration_test.py`：真实 TCP 集成测试
 
 ## 运行
 
@@ -36,4 +35,4 @@ cl /nologo /EHsc /std:c++17 /utf-8 /W4 server.cpp ws2_32.lib /Fe:server.exe
 cl /nologo /EHsc /std:c++17 /utf-8 /W4 client.cpp ws2_32.lib /Fe:client.exe
 ```
 
-仓库按要求未包含构建脚本。测试需 Python 3：`python tests\integration_test.py`。
+仓库按要求未包含构建脚本和测试目录。
